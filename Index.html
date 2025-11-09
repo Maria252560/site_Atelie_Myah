@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYAH Atelier | Original Jewelry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --beige: #E6DCC7;
+            --dark-text: #2F2F2F;
+            --silver: #C0C0C0;
+            --blue: #6B8E9F;
+            --shadow: rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            color: var(--dark-text);
+            background-color: var(--beige);
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23d4c9b1' fill-opacity='0.2' fill-rule='evenodd'/%3E%3C/svg%3E");
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 1px solid rgba(47, 47, 47, 0.1);
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--dark-text);
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            display: inline-block;
+        }
+
+        .logo:hover {
+            color: var(--blue);
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        nav a {
+            margin: 0 1.5rem;
+            text-decoration: none;
+            color: var(--dark-text);
+            font-weight: 400;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--blue);
+        }
+
+        /* Sections */
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 2px;
+            background: var(--dark-text);
+            margin: 1rem auto;
+        }
+
+        /* Home Section */
+        #home {
+            padding: 3rem 0;
+        }
+
+        .art-panel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .panel-side {
+            flex: 1;
+            max-width: 300px;
+        }
+
+        .panel-center {
+            flex: 2;
+            max-width: 500px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            box-shadow: 0 5px 15px var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .panel-side .gallery-item {
+            aspect-ratio: 3/4;
+        }
+
+        .panel-center .gallery-item {
+            aspect-ratio: 4/3;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img, .gallery-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img, .gallery-item:hover video {
+            transform: scale(1.05);
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .play-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .video-container:hover .play-overlay {
+            opacity: 1;
+        }
+
+        .play-icon {
+            color: white;
+            font-size: 3rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .play-text {
+            position: absolute;
+            bottom: 15px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 0.9rem;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+            opacity: 0.8;
+        }
+
+        /* About Section */
+        #about {
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 5rem 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #about:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.1rem;
+            position: relative;
+        }
+
+        .about-content p {
+            margin-bottom: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        #about:hover .about-content p {
+            color: var(--blue);
+        }
+
+        .click-indicator {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.9rem;
+            color: var(--dark-text);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        #about:hover .click-indicator {
+            opacity: 0.7;
+        }
+
+        /* Collection Section */
+        .collection-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .collection-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            box-shadow: 0 5px 15px var(--shadow);
+            transition: transform 0.3s ease;
+            aspect-ratio: 1 / 1;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .collection-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .collection-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .placeholder-text {
+            color: rgba(47, 47, 47, 0.4);
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Process Section */
+        #process {
+            background-color: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #process:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .process-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .process-text {
+            flex: 1;
+            min-width: 300px;
+            transition: color 0.3s ease;
+        }
+
+        #process:hover .process-text {
+            color: var(--blue);
+        }
+
+        .process-image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px var(--shadow);
+            aspect-ratio: 4 / 3;
+        }
+
+        .process-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .follow-us {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .instagram-link {
+            color: var(--dark-text);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .instagram-link:hover {
+            color: var(--blue);
+        }
+
+        .instagram-link i {
+            font-size: 1.5rem;
+        }
+
+        .next-event {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(47, 47, 47, 0.2);
+        }
+
+        .next-event-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            display: inline-block;
+        }
+
+        .next-event-title:hover {
+            color: var(--blue);
+        }
+
+        .event-field {
+            width: 100%;
+            min-height: 100px;
+            padding: 1rem;
+            border: none;
+            border-radius: 4px;
+            background-color: var(--beige);
+            margin-top: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-family: 'Lato', sans-serif;
+            font-size: 1rem;
+            resize: vertical;
+            color: var(--dark-text);
+        }
+
+        .event-field:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .event-field:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .event-field::placeholder {
+            color: rgba(47, 47, 47, 0.5);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid rgba(47, 47, 47, 0.1);
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        /* Image Upload Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .modal h3 {
+            margin-bottom: 1rem;
+        }
+
+        .modal-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .btn {
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Lato', sans-serif;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--dark-text);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--blue);
+        }
+
+        .btn-secondary {
+            background-color: #e0e0e0;
+            color: var(--dark-text);
+        }
+
+        .btn-secondary:hover {
+            background-color: #d0d0d0;
+        }
+
+        /* Text Edit Modal */
+        .text-edit-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-edit-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 700px;
+            width: 90%;
+        }
+
+        .text-edit-content h3 {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .text-input {
+            width: 100%;
+            min-height: 200px;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Lato', sans-serif;
+            font-size: 1rem;
+            line-height: 1.6;
+            resize: vertical;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Video Modal */
+        .video-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1001;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-modal-content {
+            max-width: 90%;
+            max-height: 90%;
+            width: auto;
+            height: auto;
+        }
+
+        .video-modal-content video {
+            width: 100%;
+            height: auto;
+            max-height: 80vh;
+        }
+
+        .close-video {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .close-video:hover {
+            color: var(--blue);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2rem;
+            }
+            
+            nav a {
+                margin: 0 1rem;
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .art-panel {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
+            .panel-side, .panel-center {
+                max-width: 100%;
+                width: 100%;
+            }
+            
+            .collection-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 1rem;
+            }
+            
+            .process-content {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.8rem;
+            }
+            
+            nav {
+                flex-wrap: wrap;
+            }
+            
+            nav a {
+                margin: 0.5rem;
+            }
+            
+            .collection-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="logo" onclick="openTextEdit('logo')">MYAH Atelier</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#collection">Collection</a>
+                <a href="#process">Process</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <div class="art-panel">
+                <div class="panel-side">
+                    <div class="gallery-item" onclick="openImageUpload(this)">
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Silver ring">
+                    </div>
+                </div>
+                <div class="panel-center">
+                    <div class="gallery-item" onclick="openVideoUpload(this)">
+                        <div class="video-container">
+                            <video poster="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80">
+                                <!-- Video source will be added dynamically -->
+                            </video>
+                            <div class="play-overlay">
+                                <i class="fas fa-play-circle play-icon"></i>
+                            </div>
+                            <div class="play-text">play film</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-side">
+                    <div class="gallery-item" onclick="openImageUpload(this)">
+                        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Artistic earrings">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" onclick="openTextEdit('about')">
+        <div class="container">
+            <h2 class="section-title">About MYAH</h2>
+            <div class="about-content">
+                <p>MYAH Atelier is the creative expression of artisan Maria Ysabel, who transforms precious materials into wearable art. Each piece is meticulously crafted with attention to detail, balance, and harmony.</p>
+                <p>Our philosophy is rooted in the belief that jewelry should be an extension of one's personality—subtle yet expressive, delicate yet enduring. We draw inspiration from organic forms, architectural lines, and the quiet beauty of nature.</p>
+                <p>Every creation at MYAH tells a story, capturing moments of inspiration and translating them into pieces that resonate with emotion and meaning.</p>
+                <div class="click-indicator">Click to edit text</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section id="collection">
+        <div class="container">
+            <h2 class="section-title">Collection</h2>
+            <div class="collection-grid">
+                <div class="collection-item" onclick="openImageUpload(this)">
+                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Geometric necklace">
+                </div>
+                <div class="collection-item" onclick="openImageUpload(this)">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Pearl earrings">
+                </div>
+                <div class="collection-item" onclick="openImageUpload(this)">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Stackable rings">
+                </div>
+                <div class="collection-item" onclick="openImageUpload(this)">
+                    <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Minimalist bracelet">
+                </div>
+                <div class="collection-item" onclick="openImageUpload(this)">
+                    <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Statement necklace">
+                </div>
+                <div class="collection-item" onclick="openImageUpload(this)">
+                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Artisan earrings">
+                </div>
+                <!-- Additional 14 clickable spaces (10 original + 4 new) -->
+                <div class="collection-item" onclick="openImageUpload(this)">
+                    <div class="placeholder-text">Click to add image</div>
+                </div>
+                <div class="collection-item" onclick="openImageUpload(this)">
+                    <div class="placeholder-text">Click to add image</div>
+                </div>
+                <div class="collection-item" onclick="openImageUpload(this)">
+                    <div class="placeholder-text">Click to add image</div>
+                </div>
+                <div class="collection-item" onclick="openImageUpload(this)">
+                    <div class="placeholder-text">Click to add image</div>
+                </div>
+                <div class="collection-item" onclick="openImageUpload(this)">
+                    <div class="placeholder-text">Click to add image</div>
+                </div>
+                <div class="collection-item" onclick="openImageUpload(this)">
+                    <div class="placeholder-text">Click to add image</div>
+                </div>
+                <div class="collection-item" onclick="openImageUpload(this)">
+                    <div class="placeholder-text">Click to add image</div>
+                </div>
+                <div class="collection-item" onclick="openImageUpload(this)">
+                    <div class="placeholder-text">Click to add image</div>
+                </div>
+                <div class="collection-item" onclick="openImageUpload(this)">
+                    <div class="placeholder-text">Click to add image</div>
+                </div>
+                <div class="collection-item" onclick="openImageUpload(this)">
+                    <div class="placeholder-text">Click to add image</div>
+                </div>
+                <!-- 4 additional clickable spaces -->
+                <div class="collection-item" onclick="openImageUpload(this)">
+                    <div class="placeholder-text">Click to add image</div>
+                </div>
+                <div class="collection-item" onclick="openImageUpload(this)">
+                    <div class="placeholder-text">Click to add image</div>
+                </div>
+                <div class="collection-item" onclick="openImageUpload(this)">
+                    <div class="placeholder-text">Click to add image</div>
+                </div>
+                <div class="collection-item" onclick="openImageUpload(this)">
+                    <div class="placeholder-text">Click to add image</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creative Process Section -->
+    <section id="process" onclick="openTextEdit('process')">
+        <div class="container">
+            <h2 class="section-title">Creative Process</h2>
+            <div class="process-content">
+                <div class="process-text">
+                    <p>At MYAH, creation begins with inspiration drawn from the natural world—the curve of a leaf, the texture of stone, the play of light on water.</p>
+                    <p>We carefully select materials that speak to our aesthetic: recycled silver, ethically sourced gemstones, and unique elements that carry their own history.</p>
+                    <p>Each piece undergoes a meticulous process of sketching, modeling, and handcrafting, ensuring that the final creation maintains the essence of the original inspiration while becoming a wearable work of art.</p>
+                    <p>Our approach balances traditional techniques with contemporary design, resulting in jewelry that feels both timeless and modern.</p>
+                </div>
+                <div class="process-image" onclick="openImageUpload(this)">
+                    <img src="https://images.unsplash.com/photo-1588444650700-6c7f0c89d36b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Jewelry making process">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="follow-us">Follow Us</div>
+                <a href="https://instagram.com/atelie_myah" class="instagram-link">
+                    <i class="fab fa-instagram"></i> @atelie_myah
+                </a>
+                
+                <div class="next-event">
+                    <div class="next-event-title" onclick="focusEventField()">Next Event</div>
+                    <textarea class="event-field" placeholder="Click to add event details..."></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 MYAH Atelier | Original Jewelry. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Image Upload Modal -->
+    <div id="imageUploadModal" class="modal">
+        <div class="modal-content">
+            <h3>Replace Image</h3>
+            <p>Click the button below to upload a new image for this element.</p>
+            <div class="modal-buttons">
+                <button class="btn btn-primary" onclick="triggerFileInput('image')">Upload Image</button>
+                <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+            </div>
+            <input type="file" id="imageInput" accept="image/*" style="display: none;" onchange="handleImageUpload(event)">
+        </div>
+    </div>
+
+    <!-- Video Upload Modal -->
+    <div id="videoUploadModal" class="modal">
+        <div class="modal-content">
+            <h3>Replace Video</h3>
+            <p>Click the button below to upload a new video for this element.</p>
+            <div class="modal-buttons">
+                <button class="btn btn-primary" onclick="triggerFileInput('video')">Upload Video</button>
+                <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+            </div>
+            <input type="file" id="videoInput" accept="video/*" style="display: none;" onchange="handleVideoUpload(event)">
+        </div>
+    </div>
+
+    <!-- Video Player Modal -->
+    <div id="videoPlayerModal" class="video-modal">
+        <span class="close-video" onclick="closeVideoPlayer()">&times;</span>
+        <div class="video-modal-content">
+            <video id="fullscreenVideo" controls>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Text Edit Modal -->
+    <div id="textEditModal" class="text-edit-modal">
+        <div class="text-edit-content">
+            <h3>Edit Text</h3>
+            <textarea id="textInput" class="text-input"></textarea>
+            <div class="modal-buttons">
+                <button class="btn btn-primary" onclick="saveText()">Save Changes</button>
+                <button class="btn btn-secondary" onclick="closeTextModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Variables to track the currently selected elements
+        let currentImageElement = null;
+        let currentTextSection = null;
+        let currentVideoElement = null;
+        const imageModal = document.getElementById('imageUploadModal');
+        const videoModal = document.getElementById('videoUploadModal');
+        const videoPlayerModal = document.getElementById('videoPlayerModal');
+        const textModal = document.getElementById('textEditModal');
+        const textInput = document.getElementById('textInput');
+        const fullscreenVideo = document.getElementById('fullscreenVideo');
+        
+        // Function to open the image upload modal
+        function openImageUpload(element) {
+            // Stop event propagation to prevent triggering text edit when clicking on images
+            event.stopPropagation();
+            currentImageElement = element;
+            imageModal.style.display = 'flex';
+        }
+        
+        // Function to open the video upload modal
+        function openVideoUpload(element) {
+            event.stopPropagation();
+            currentVideoElement = element;
+            videoModal.style.display = 'flex';
+        }
+        
+        // Function to open the text edit modal
+        function openTextEdit(section) {
+            currentTextSection = section;
+            
+            // Get the current text content
+            let textContent = '';
+            if (section === 'logo') {
+                textContent = document.querySelector('.logo').textContent;
+            } else if (section === 'about') {
+                const paragraphs = document.querySelectorAll('#about .about-content p');
+                paragraphs.forEach(p => {
+                    textContent += p.textContent + '\n\n';
+                });
+            } else if (section === 'process') {
+                const paragraphs = document.querySelectorAll('#process .process-text p');
+                paragraphs.forEach(p => {
+                    textContent += p.textContent + '\n\n';
+                });
+            }
+            
+            textInput.value = textContent.trim();
+            textModal.style.display = 'flex';
+        }
+        
+        // Function to save the edited text
+        function saveText() {
+            if (currentTextSection && textInput.value) {
+                if (currentTextSection === 'logo') {
+                    document.querySelector('.logo').textContent = textInput.value;
+                } else {
+                    const paragraphs = textInput.value.split('\n\n');
+                    
+                    if (currentTextSection === 'about') {
+                        const aboutParagraphs = document.querySelectorAll('#about .about-content p');
+                        aboutParagraphs.forEach((p, index) => {
+                            if (paragraphs[index]) {
+                                p.textContent = paragraphs[index].trim();
+                            }
+                        });
+                    } else if (currentTextSection === 'process') {
+                        const processParagraphs = document.querySelectorAll('#process .process-text p');
+                        processParagraphs.forEach((p, index) => {
+                            if (paragraphs[index]) {
+                                p.textContent = paragraphs[index].trim();
+                            }
+                        });
+                    }
+                }
+                
+                closeTextModal();
+            }
+        }
+        
+        // Function to focus on the event field
+        function focusEventField() {
+            document.querySelector('.event-field').focus();
+        }
+        
+        // Function to close the image modal
+        function closeModal() {
+            imageModal.style.display = 'none';
+            videoModal.style.display = 'none';
+            currentImageElement = null;
+            currentVideoElement = null;
+        }
+        
+        // Function to close the text modal
+        function closeTextModal() {
+            textModal.style.display = 'none';
+            currentTextSection = null;
+        }
+        
+        // Function to close the video player
+        function closeVideoPlayer() {
+            videoPlayerModal.style.display = 'none';
+            fullscreenVideo.pause();
+            fullscreenVideo.currentTime = 0;
+        }
+        
+        // Function to trigger the file input
+        function triggerFileInput(type) {
+            if (type === 'image') {
+                document.getElementById('imageInput').click();
+            } else if (type === 'video') {
+                document.getElementById('videoInput').click();
+            }
+        }
+        
+        // Function to handle the image upload
+        function handleImageUpload(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    // Check if the element has an img tag or is a placeholder
+                    const img = currentImageElement.querySelector('img');
+                    if (img) {
+                        // Replace the image source with the uploaded image
+                        img.src = e.target.result;
+                    } else {
+                        // Replace the placeholder with an image
+                        currentImageElement.innerHTML = '';
+                        const newImg = document.createElement('img');
+                        newImg.src = e.target.result;
+                        newImg.alt = 'Uploaded jewelry image';
+                        currentImageElement.appendChild(newImg);
+                    }
+                    
+                    // Close the modal
+                    closeModal();
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+        
+        // Function to handle the video upload
+        function handleVideoUpload(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const videoURL = URL.createObjectURL(file);
+                const video = currentVideoElement.querySelector('video');
+                video.src = videoURL;
+                video.poster = ''; // Remove poster when video is uploaded
+                
+                // Add click event to play video in fullscreen
+                video.onclick = function(e) {
+                    e.stopPropagation();
+                    fullscreenVideo.src = videoURL;
+                    videoPlayerModal.style.display = 'flex';
+                    fullscreenVideo.play();
+                };
+                
+                // Close the modal
+                closeModal();
+            }
+        }
+        
+        // Close modals when clicking outside of them
+        window.onclick = function(event) {
+            if (event.target === imageModal || event.target === videoModal) {
+                closeModal();
+            }
+            if (event.target === textModal) {
+                closeTextModal();
+            }
+            if (event.target === videoPlayerModal) {
+                closeVideoPlayer();
+            }
+        }
+        
+        // Add click event to the center video container to open video upload
+        document.querySelector('.panel-center .gallery-item').addEventListener('click', function(e) {
+            // If there's no video source yet, open the upload modal
+            const video = this.querySelector('video');
+            if (!video.src || video.src === '') {
+                openVideoUpload(this);
+            } else {
+                // If video exists, play it in fullscreen
+                fullscreenVideo.src = video.src;
+                videoPlayerModal.style.display = 'flex';
+                fullscreenVideo.play();
+            }
+        });
+    </script>
+</body>
+</html>
